@@ -1,39 +1,100 @@
-# fpga-edge-ai-plant-disease
-ระบบ Edge AI ที่ใช้ FPGA เร่งความเร็วการตรวจจับโรคพืชแบบเรียลไทม์ สำหรับการเกษตรอัจฉริยะ
+# 🎓 FPGA-Accelerated Real-time Plant Disease Detection for Smart Agriculture
 
+[![Project Status: Active](https://img.shields.io/badge/Project%20Status-Active-green.svg)]()
+[![Target](https://img.shields.io/badge/Target-JAIST%20Scholarship%20Proposal-blue)]()
+[![Platform](https://img.shields.io/badge/Platform-PYNQ--Z2%20%7C%20Zynq%207000-orange)]()
+
+ระบบ Edge AI ประสิทธิภาพสูงสำหรับการตรวจจับโรคพืชแบบเรียลไทม์ โดยใช้ FPGA (Field-Programmable Gate Array) เร่งความเร็วการประมวลผลในส่วนของ Convolutional Layers ออกแบบมาเพื่อให้สามารถทำงานได้ในพื้นที่การเกษตรห่างไกลที่มีข้อจำกัดด้านพลังงานและโครงข่ายอินเทอร์เน็ต ซึ่งเป็นโปรเจควิจัยและพัฒนาเพื่อยื่นสมัครทุน **JAIST Scholarship**
+
+---
+
+## 📋 สารบัญ (Table of Contents)
+1. [ภาพรวมสถาปัตยกรรมระบบ (System Architecture)](#1-ภาพรวมสถาปัตยกรรมระบบ-system-architecture)
+2. [โครงสร้างโฟลเดอร์ของโปรเจค (Repository Structure)](#2-โครงสร้างโฟลเดอร์ของโปรเจค-repository-structure)
+3. [การแบ่งบทบาทหน้าที่ในทีม (Team Roles & Deliverables)](#3-การ-แบ่งบทบาทหน้าที่ในทีม-team-roles--deliverables)
+4. [ผลการทดสอบและเปรียบเทียบ (Benchmarks & Experimental Results)](#4-ผลการทดสอบและเปรียบเทียบ-benchmarks--experimental-results)
+5. [ขั้นตอนการติดตั้งและเริ่มใช้งาน (Getting Started)](#5-ขั้นตอนการติดตั้งและเริ่มใช้งาน-getting-started)
+
+---
+
+## 1. ภาพรวมสถาปัตยกรรมระบบ (System Architecture)
+
+ระบบประกอบด้วยการทำงานร่วมกันระหว่าง Hardware-Software Co-design บนชิป Zynq SoC โดยแบ่งหน้าที่การประมวลผลออกเป็น 2 ส่วนหลัก:
+```
+┌─────────────────────────────────────────┐
+│              Zynq SoC Chip              │
+│                                         │
+│  ┌──────────────┐    ┌──────────────┐   │
+│  │   ARM CPU    │ ←→ │ FPGA Fabric  │   │
+│  │ (Dual-core)  │    │ (Programmable│   │
+│  │ Linux+Python │    │   Logic)     │   │
+│  └──────┬───────┘    └──────┬───────┘   │
+│         │      AXI Bus      │           │
+│         └────────┬──────────┘           │
+│                  ↕                      │
+│         DDR Memory (Shared)             │
+└─────────────────────────────────────────┘
+        ↑                       ↑
+   USB/Ethernet            HDMI/GPIO
+```
+
+- **ARM CPU** = คอมเล็ก ๆ รัน Linux ได้ เขียน Python ได้ปกติ
+- **FPGA Fabric** = พื้นที่ว่างให้ออกแบบวงจรเร่งความเร็ว
+- **DDR RAM** = หน่วยความจำที่ทั้ง ARM และ FPGA แชร์กัน
+- **AXI Bus** = ทางหลวงเชื่อม ARM กับ FPGA (มาตรฐาน ARM)
+
+Data Flow ของระบบ
+```
+┌────────┐    ┌──────────────┐    ┌──────────────┐    ┌──────────────┐    ┌────────────┐
+│ กล้อง   │ →  │ Preprocess   │ →  │  CNN Accel   │ →  │ Postprocess  │ →  │ Dashboard  │
+│  USB   │    │ Python (ARM) │    │  FPGA (HLS)  │    │ Python (ARM) │    │   Web UI   │
+│ คนที่ 4 │    │   คนที่ 4    │    │   คนที่ 2    │    │   คนที่ 4    │    │  คนที่ 5   │
+└────────┘    └──────────────┘    └──────┬───────┘    └──────────────┘    └────────────┘
+                                         ↑
+                              ┌──────────┴──────────┐
+                              │  AI Model Weights   │
+                              │   Trained CNN (INT8)│
+                              │       คนที่ 1       │
+                              └─────────────────────┘
+
+       └──────────────── คนที่ 3 (AXI + Block Integration) ─────────────┘
+```
+
+## 2. โครงสร้างโฟลเดอร์ของโปรเจค (Repository Structure)
+
+คลังโค้ดนี้ถูกจัดสรรแยกตามโดเมนงานวิจัยอย่างชัดเจน เพื่อรองรับกระบวนการพัฒนาแบบคู่ขนาน (Parallel Development):
+
+```text
 fpga-edge-ai-plant-disease/
 │
-├── .gitignore
-├── README.md               # หน้าแรกของโปรเจค (คนที่ 5 ดูแล: ใส่ Arch Diagram, ผล Benchmark)
+├── ai-model/               # [👤 Role 1] การพัฒนาและเทรนโมเดล AI
+│   ├── datasets/           # สคริปต์ดาวน์โหลดและการจัดการ PlantVillage Dataset
+│   ├── notebooks/          # Jupyter Notebook สำหรับกระบวนการ Train & Quantization (INT8)
+│   ├── src/                # โค้ดต้นฉบับภาษา Python สำหรับ Pipeline ของโมเดล
+│   └── exported-weights/   # ไฟล์ค่าน้ำหนักโมเดล (.bin, .npy, .onnx) ที่พร้อมส่งต่อให้ FPGA
 │
-├── ai-model/               # 👤 Domain คนที่ 1 (AI Model Engineer)
-│   ├── datasets/           # โฟลเดอร์เก็บข้อมูลจำลอง หรือ Script ดึง PlantVillage Dataset
-│   ├── notebooks/          # Google Colab / Jupyter Notebooks สำหรับ Train & Quantize
-│   ├── src/                # Python scripts สำหรับเทรนและแปลงไฟล์โมเดล
-│   └── exported-weights/   # Target output: ไฟล์โมเดล (.bin, .npy, .onnx) ที่ผ่าน INT8 แล้ว
+├── fpga-hls/               # [👤 Role 2] การออกแบบวงจรเร่งความเร็วด้วย High-Level Synthesis
+│   ├── src/                # โค้ดต้นฉบับ C/C++ ของ Hardware IP (conv2d.cpp, conv2d.h)
+│   ├── tb/                 # Testbench สำหรับตรวจสอบความถูกต้องผ่าน C-Simulation
+│   └── script.tcl          # สคริปต์อัตโนมัติสำหรับการจดสิทธิบัตรและ Export IP Block
 │
-├── fpga-hls/               # 👤 Domain คนที่ 2 (FPGA HLS Engineer)
-│   ├── src/                # โค้ด C/C++ สำหรับทำ Accelerator IP (เช่น conv2d.cpp, conv2d.h)
-│   ├── tb/                 # Testbench สำหรับทำ C-Simulation (tb_conv2d.cpp)
-│   └── script.tcl          # Script สำหรับสั่งรันรวบยอดใน Vitis/Vivado HLS
+├── fpga-hardware/          # [👤 Role 3] การรวมระบบฮาร์ดแวร์บน Vivado
+│   ├── vivado-project/     # โครงสร้างโปรเจคหลักบนโปรแกรม Vivado
+│   ├── ip-repo/            # คลังเก็บ Custom IP Blocks ที่ได้มาจากพาร์ท HLS
+│   └── bitstreams/         # ไฟล์บิตสตรีมสำเร็จรูป (.bit, .hwh) สำหรับโปรแกรมลงบอร์ด
 │
-├── fpga-hardware/          # 👤 Domain คนที่ 3 (Hardware Integration Engineer)
-│   ├── vivado-project/     # ไฟล์โปรเจค Vivado (แนะนำให้ทำ gitignore ไฟล์ชั่วคราวไว้)
-│   ├── ip-repo/            # โฟลเดอร์เก็บ IP Block (.zip) ที่ได้มาจากคนที่ 2
-│   └── bitstreams/         # Target output: ไฟล์ .bit และ .hwh สำหรับส่งต่อให้คนที่ 4
+├── pynq-embedded/          # [👤 Role 4] ซอฟต์แวร์ฝังตัวบนระบบปฏิบัติการ Linux (PYNQ)
+│   ├── notebooks/          # Jupyter Notebook สำหรับการทำ Rapid Prototyping บนบอร์ดจริง
+│   ├── overlays/           # โฟลเดอร์จัดเก็บไฟล์ดีพลอยฮาร์ดแวร์ (.bit และ .hwh)
+│   ├── src/                # โค้ดหลักระบบควบคุม (Camera -> Hardware Buffer -> Hardware Execute)
+│   └── app_api.py          # API Gateway (FastAPI/Flask) เชื่อมโยงระบบเข้ากับเครือข่าย
 │
-├── pynq-embedded/          # 👤 Domain คนที่ 4 (Embedded Software / PYNQ Engineer)
-│   ├── notebooks/          # Jupyter Notebook ที่รันบนบอร์ด PYNQ สำหรับทดสอบด่วน
-│   ├── overlays/           # ที่เก็บไฟล์ .bit และ .hwh ที่รับมาจากคนที่ 3
-│   ├── src/                # Core Python Code (Pipeline: รับภาพกล้อง -> ส่งเข้า FPGA -> ผลลัพธ์)
-│   └── app_api.py          # Python API (เช่น Flask/FastAPI backend) สำหรับส่งต่อให้คนที่ 5
+├── web-dashboard/          # [👤 Role 5] ส่วนติดต่อผู้ใช้งานและระบบแสดงผล
+│   ├── backend/            # ระบบเซิร์ฟเวอร์ย่อยสำหรับการส่งผ่านข้อมูลผ่าน WebSockets
+│   ├── frontend/           # หน้าต่างเว็บแอปพลิเคชัน (HTML/JS หรือ React) แสดงผลแบบเรียลไทม์
+│   └── assets/             # ไฟล์สื่อประสม รูปภาพประกอบ และเอกสารนำเสนอ
 │
-├── web-dashboard/          # 👤 Domain คนที่ 5 (System / Demo / Project Manager)
-│   ├── backend/            # Web server (กรณีแยกส่วนกับคนที่ 4)
-│   ├── frontend/           # โค้ดหน้าเว็บ UI (HTML/CSS/JS หรือ React) สำหรับโชว์ผลเรียลไทม์
-│   └── assets/             # รูปภาพ, โลโก้, สไลด์พรีเซนต์
-│
-└── docs/                   # เอกสารประกอบโปรเจค (ช่วยกันเขียน)
-    ├── architecture/       # รูปภาพระบบ/Data Flow Diagram
-    ├── reports/            # ร่าง Technical Report (ไฟล์ .tex หรือ .md)
-    └── presentation/       # สไลด์สำหรับ Pitch ทุน JAIST
+└── docs/                   # เอกสารประกอบงานวิจัยทางวิชาการ
+    ├── architecture/       # แผนผังทางสถาปัตยกรรมและแผนภูมิกระแสข้อมูล (Data Flow)
+    ├── reports/            # ร่างรายงานวิจัยฉบับสมบูรณ์ (Technical Report 10-15 หน้า)
+    └── presentation/       # สไลด์สำหรับใช้นำเสนอต่อคณะกรรมการทุน JAIST
