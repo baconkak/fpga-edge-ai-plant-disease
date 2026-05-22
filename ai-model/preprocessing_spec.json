@@ -1,0 +1,50 @@
+{
+  "input_size": [
+    224,
+    224
+  ],
+  "mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "num_classes": 31,
+  "class_names": [
+    "Cabbage_Alternaria_Leaf_Spot",
+    "Cabbage_Bacterial_Soft_Rot",
+    "Cabbage_Balck_Rot",
+    "Cabbage_Downy_Mildew",
+    "Cabbage_Healthy",
+    "Grape_Anthracnose",
+    "Grape_Black_Rot",
+    "Grape_Downey_Mildew",
+    "Grape_Gray_Mold",
+    "Grape_Healthy",
+    "Melon_Alternaria",
+    "Melon_Anthracnose",
+    "Melon_Downy_Mildew",
+    "Melon_Healthy",
+    "Melon_Powdery_Mildew",
+    "Rice_Bacterial_Leaf_Blight",
+    "Rice_Blast",
+    "Rice_Brown_Spot",
+    "Rice_Healthy",
+    "Rice_Sheath_Blight",
+    "Straw_Angular",
+    "Straw_Anthracnose",
+    "Straw_Gray_Mold",
+    "Straw_Healthy_Fruit",
+    "Straw_Healthy_Leaf",
+    "Straw_Powdery_Fruit",
+    "Straw_Powdery_Leaf",
+    "Tea_Anthracnose",
+    "Tea_Blister_Blight",
+    "Tea_Brown_Blight",
+    "Tea_Healthy"
+  ]
+}
