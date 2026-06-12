@@ -1,0 +1,9 @@
+{
+  "layer_name": "features.0.0",
+  "in_channels": 3,
+  "out_channels": 32,
+  "kernel_size": [3, 3],
+  "stride": [2, 2],
+  "padding": [1, 1],
+  "weight_shape": [32, 3, 3, 3]
+}
