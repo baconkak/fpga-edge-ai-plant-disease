@@ -1,7 +1,7 @@
 import express from 'express';
 import { createServer } from 'http';
 import { Server } from 'socket.io';
-import cors from 'cors';
+import cors from 'cors'; //Cross-Origin Resource Sharing
 
 const app = express();
 app.use(cors());
@@ -32,31 +32,31 @@ app.post('/api/v1/pynq/inference', (req, res) => {
 });
 
 // 2. WebSocket Connection: คอยดูว่าหน้าบ้านเชื่อมต่อท่อมาหรือยัง
-io.on('connection', (socket) => {
-  console.log('⚡ Dashboard Client connected:', socket.id);
+  io.on('connection', (socket) => {
+    console.log('⚡ Dashboard Client connected:', socket.id);
 
-  // สร้าง Demo Mode (ข้อมูลจำลอง)
-  // ถ้ายังไม่ได้เปิดบอร์ด PYNQ ตัวหลังบ้านจะสุ่มส่งข้อมูลโรคพืชไปให้หน้าบ้านทุกๆ 3 วินาที
-  // เพื่อให้หน้าเว็บขยับโชว์กรรมการได้ทันทีเวลาเอาเว็บไปเปิดที่ไหน
-  const diseases = ['Healthy', 'Powdery_Mildew', 'Leaf_Rust', 'Bacterial_Spot'];
-  
-  const demoInterval = setInterval(() => {
-    // ส่งข้อมูลจำลองถ้าไม่มีบอร์ดจริงยิงเข้ามา
-    const mockPayload = {
-      device_id: 'pynq-z2-demo-node',
-      timestamp: new Date().toISOString(),
-      disease_detected: diseases[Math.floor(Math.random() * diseases.length)],
-      confidence: parseFloat((Math.random() * (0.99 - 0.85) + 0.85).toFixed(3)),
-      hardware_metrics: {
-        fpga_temp: parseFloat((Math.random() * (55.0 - 45.0) + 45.0).toFixed(1)),
-        inference_time_ms: parseFloat((Math.random() * (40.0 - 30.0) + 30.0).toFixed(2)),
-        fps: parseFloat((Math.random() * (30.0 - 25.0) + 25.0).toFixed(1)),
-        power_watt: parseFloat((2.0 + Math.random() * 0.9).toFixed(2))
-      },
-    };
+    // สร้าง Demo Mode (ข้อมูลจำลอง)
+    // ถ้ายังไม่ได้เปิดบอร์ด PYNQ ตัวหลังบ้านจะสุ่มส่งข้อมูลโรคพืชไปให้หน้าบ้านทุกๆ 1 วินาที
+    // เพื่อให้หน้าเว็บขยับโชว์กรรมการได้ทันทีเวลาเอาเว็บไปเปิดที่ไหน
+    const diseases = ['Healthy', 'Powdery_Mildew', 'Leaf_Rust', 'Bacterial_Spot'];
     
-    socket.emit('pynq-telemetry', mockPayload);
-  }, 1000);
+    const demoInterval = setInterval(() => {
+      // ส่งข้อมูลจำลองถ้าไม่มีบอร์ดจริงยิงเข้ามา
+      const mockPayload = {
+        device_id: 'pynq-z2-demo-node',
+        timestamp: new Date().toISOString(),
+        disease_detected: diseases[Math.floor(Math.random() * diseases.length)],
+        confidence: parseFloat((Math.random() * (0.99 - 0.85) + 0.85).toFixed(3)),
+        hardware_metrics: {
+          fpga_temp: parseFloat((Math.random() * (55.0 - 45.0) + 45.0).toFixed(1)),
+          inference_time_ms: parseFloat((Math.random() * (40.0 - 30.0) + 30.0).toFixed(2)),
+          fps: parseFloat((Math.random() * (30.0 - 25.0) + 25.0).toFixed(1)),
+          power_watt: parseFloat((2.0 + Math.random() * 0.9).toFixed(2))
+        },
+      };
+      
+      socket.emit('pynq-telemetry', mockPayload);
+    }, 1000);
 
   socket.on('disconnect', () => {
     console.log('❌ Dashboard Client disconnected');
