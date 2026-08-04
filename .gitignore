@@ -235,6 +235,7 @@ vitis_hls.log
 */*.hw/
 */*.ip_user_files/
 */*.runs/
+*/*.gen/
 */*.sim/
 */*.srcs/utils_1/
 
