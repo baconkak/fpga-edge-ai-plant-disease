@@ -1,0 +1,2881 @@
+[
+  {
+    "name": "features.0.0.weight",
+    "shape": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_0_0_weight_int8.npy",
+    "quant_scale": 0.011657241731882095
+  },
+  {
+    "name": "features.0.1.weight",
+    "shape": [
+      32
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_0_1_weight_int8.npy",
+    "quant_scale": 0.004133576061576605
+  },
+  {
+    "name": "features.0.1.bias",
+    "shape": [
+      32
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_0_1_bias_int8.npy",
+    "quant_scale": 0.00766356848180294
+  },
+  {
+    "name": "features.0.1.running_mean",
+    "shape": [
+      32
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_0_1_running_mean_int8.npy",
+    "quant_scale": 0.011072766035795212
+  },
+  {
+    "name": "features.0.1.running_var",
+    "shape": [
+      32
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_0_1_running_var_int8.npy",
+    "quant_scale": 0.04676447808742523
+  },
+  {
+    "name": "features.0.1.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_0_1_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.1.conv.0.0.weight",
+    "shape": [
+      32,
+      1,
+      3,
+      3
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_1_conv_0_0_weight_int8.npy",
+    "quant_scale": 0.021193593740463257
+  },
+  {
+    "name": "features.1.conv.0.1.weight",
+    "shape": [
+      32
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_1_conv_0_1_weight_int8.npy",
+    "quant_scale": 0.009081684052944183
+  },
+  {
+    "name": "features.1.conv.0.1.bias",
+    "shape": [
+      32
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_1_conv_0_1_bias_int8.npy",
+    "quant_scale": 0.014011339284479618
+  },
+  {
+    "name": "features.1.conv.0.1.running_mean",
+    "shape": [
+      32
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_1_conv_0_1_running_mean_int8.npy",
+    "quant_scale": 0.004543596878647804
+  },
+  {
+    "name": "features.1.conv.0.1.running_var",
+    "shape": [
+      32
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_1_conv_0_1_running_var_int8.npy",
+    "quant_scale": 0.0020872517488896847
+  },
+  {
+    "name": "features.1.conv.0.1.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_1_conv_0_1_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.1.conv.1.weight",
+    "shape": [
+      16,
+      32,
+      1,
+      1
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_1_conv_1_weight_int8.npy",
+    "quant_scale": 0.00934924092143774
+  },
+  {
+    "name": "features.1.conv.2.weight",
+    "shape": [
+      16
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_1_conv_2_weight_int8.npy",
+    "quant_scale": 0.005442425608634949
+  },
+  {
+    "name": "features.1.conv.2.bias",
+    "shape": [
+      16
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_1_conv_2_bias_int8.npy",
+    "quant_scale": 1.1853615866641576e-08
+  },
+  {
+    "name": "features.1.conv.2.running_mean",
+    "shape": [
+      16
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_1_conv_2_running_mean_int8.npy",
+    "quant_scale": 0.015455071814358234
+  },
+  {
+    "name": "features.1.conv.2.running_var",
+    "shape": [
+      16
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_1_conv_2_running_var_int8.npy",
+    "quant_scale": 0.003331574844196439
+  },
+  {
+    "name": "features.1.conv.2.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_1_conv_2_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.2.conv.0.0.weight",
+    "shape": [
+      96,
+      16,
+      1,
+      1
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_2_conv_0_0_weight_int8.npy",
+    "quant_scale": 0.005742843262851238
+  },
+  {
+    "name": "features.2.conv.0.1.weight",
+    "shape": [
+      96
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_2_conv_0_1_weight_int8.npy",
+    "quant_scale": 0.004593656864017248
+  },
+  {
+    "name": "features.2.conv.0.1.bias",
+    "shape": [
+      96
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_2_conv_0_1_bias_int8.npy",
+    "quant_scale": 0.005731217097491026
+  },
+  {
+    "name": "features.2.conv.0.1.running_mean",
+    "shape": [
+      96
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_2_conv_0_1_running_mean_int8.npy",
+    "quant_scale": 9.252920207813986e-09
+  },
+  {
+    "name": "features.2.conv.0.1.running_var",
+    "shape": [
+      96
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_2_conv_0_1_running_var_int8.npy",
+    "quant_scale": 0.004968739580363035
+  },
+  {
+    "name": "features.2.conv.0.1.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_2_conv_0_1_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.2.conv.1.0.weight",
+    "shape": [
+      96,
+      1,
+      3,
+      3
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_2_conv_1_0_weight_int8.npy",
+    "quant_scale": 0.0042198095470666885
+  },
+  {
+    "name": "features.2.conv.1.1.weight",
+    "shape": [
+      96
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_2_conv_1_1_weight_int8.npy",
+    "quant_scale": 0.006626582704484463
+  },
+  {
+    "name": "features.2.conv.1.1.bias",
+    "shape": [
+      96
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_2_conv_1_1_bias_int8.npy",
+    "quant_scale": 0.01086013950407505
+  },
+  {
+    "name": "features.2.conv.1.1.running_mean",
+    "shape": [
+      96
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_2_conv_1_1_running_mean_int8.npy",
+    "quant_scale": 0.007707756012678146
+  },
+  {
+    "name": "features.2.conv.1.1.running_var",
+    "shape": [
+      96
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_2_conv_1_1_running_var_int8.npy",
+    "quant_scale": 0.0009478415013290942
+  },
+  {
+    "name": "features.2.conv.1.1.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_2_conv_1_1_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.2.conv.2.weight",
+    "shape": [
+      24,
+      96,
+      1,
+      1
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_2_conv_2_weight_int8.npy",
+    "quant_scale": 0.005951578263193369
+  },
+  {
+    "name": "features.2.conv.3.weight",
+    "shape": [
+      24
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_2_conv_3_weight_int8.npy",
+    "quant_scale": 0.005365215707570314
+  },
+  {
+    "name": "features.2.conv.3.bias",
+    "shape": [
+      24
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_2_conv_3_bias_int8.npy",
+    "quant_scale": 9.53869427888776e-09
+  },
+  {
+    "name": "features.2.conv.3.running_mean",
+    "shape": [
+      24
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_2_conv_3_running_mean_int8.npy",
+    "quant_scale": 0.010067669674754143
+  },
+  {
+    "name": "features.2.conv.3.running_var",
+    "shape": [
+      24
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_2_conv_3_running_var_int8.npy",
+    "quant_scale": 0.002701109740883112
+  },
+  {
+    "name": "features.2.conv.3.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_2_conv_3_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.3.conv.0.0.weight",
+    "shape": [
+      144,
+      24,
+      1,
+      1
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_3_conv_0_0_weight_int8.npy",
+    "quant_scale": 0.004180417861789465
+  },
+  {
+    "name": "features.3.conv.0.1.weight",
+    "shape": [
+      144
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_3_conv_0_1_weight_int8.npy",
+    "quant_scale": 0.004807606339454651
+  },
+  {
+    "name": "features.3.conv.0.1.bias",
+    "shape": [
+      144
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_3_conv_0_1_bias_int8.npy",
+    "quant_scale": 0.007970936596393585
+  },
+  {
+    "name": "features.3.conv.0.1.running_mean",
+    "shape": [
+      144
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_3_conv_0_1_running_mean_int8.npy",
+    "quant_scale": 5.620683474205634e-09
+  },
+  {
+    "name": "features.3.conv.0.1.running_var",
+    "shape": [
+      144
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_3_conv_0_1_running_var_int8.npy",
+    "quant_scale": 0.006717173382639885
+  },
+  {
+    "name": "features.3.conv.0.1.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_3_conv_0_1_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.3.conv.1.0.weight",
+    "shape": [
+      144,
+      1,
+      3,
+      3
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_3_conv_1_0_weight_int8.npy",
+    "quant_scale": 0.007425150368362665
+  },
+  {
+    "name": "features.3.conv.1.1.weight",
+    "shape": [
+      144
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_3_conv_1_1_weight_int8.npy",
+    "quant_scale": 0.0033617098815739155
+  },
+  {
+    "name": "features.3.conv.1.1.bias",
+    "shape": [
+      144
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_3_conv_1_1_bias_int8.npy",
+    "quant_scale": 0.006325452122837305
+  },
+  {
+    "name": "features.3.conv.1.1.running_mean",
+    "shape": [
+      144
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_3_conv_1_1_running_mean_int8.npy",
+    "quant_scale": 0.006407813169062138
+  },
+  {
+    "name": "features.3.conv.1.1.running_var",
+    "shape": [
+      144
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_3_conv_1_1_running_var_int8.npy",
+    "quant_scale": 9.247216075891629e-05
+  },
+  {
+    "name": "features.3.conv.1.1.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_3_conv_1_1_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.3.conv.2.weight",
+    "shape": [
+      24,
+      144,
+      1,
+      1
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_3_conv_2_weight_int8.npy",
+    "quant_scale": 0.004097477998584509
+  },
+  {
+    "name": "features.3.conv.3.weight",
+    "shape": [
+      24
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_3_conv_3_weight_int8.npy",
+    "quant_scale": 0.005686605349183083
+  },
+  {
+    "name": "features.3.conv.3.bias",
+    "shape": [
+      24
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_3_conv_3_bias_int8.npy",
+    "quant_scale": 3.1428948332745676e-09
+  },
+  {
+    "name": "features.3.conv.3.running_mean",
+    "shape": [
+      24
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_3_conv_3_running_mean_int8.npy",
+    "quant_scale": 0.008085808716714382
+  },
+  {
+    "name": "features.3.conv.3.running_var",
+    "shape": [
+      24
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_3_conv_3_running_var_int8.npy",
+    "quant_scale": 0.001073245657607913
+  },
+  {
+    "name": "features.3.conv.3.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_3_conv_3_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.4.conv.0.0.weight",
+    "shape": [
+      144,
+      24,
+      1,
+      1
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_4_conv_0_0_weight_int8.npy",
+    "quant_scale": 0.005895833484828472
+  },
+  {
+    "name": "features.4.conv.0.1.weight",
+    "shape": [
+      144
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_4_conv_0_1_weight_int8.npy",
+    "quant_scale": 0.004063185304403305
+  },
+  {
+    "name": "features.4.conv.0.1.bias",
+    "shape": [
+      144
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_4_conv_0_1_bias_int8.npy",
+    "quant_scale": 0.0026136739179491997
+  },
+  {
+    "name": "features.4.conv.0.1.running_mean",
+    "shape": [
+      144
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_4_conv_0_1_running_mean_int8.npy",
+    "quant_scale": 7.881933328235391e-09
+  },
+  {
+    "name": "features.4.conv.0.1.running_var",
+    "shape": [
+      144
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_4_conv_0_1_running_var_int8.npy",
+    "quant_scale": 0.011677841655910015
+  },
+  {
+    "name": "features.4.conv.0.1.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_4_conv_0_1_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.4.conv.1.0.weight",
+    "shape": [
+      144,
+      1,
+      3,
+      3
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_4_conv_1_0_weight_int8.npy",
+    "quant_scale": 0.0023220020812004805
+  },
+  {
+    "name": "features.4.conv.1.1.weight",
+    "shape": [
+      144
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_4_conv_1_1_weight_int8.npy",
+    "quant_scale": 0.004371431656181812
+  },
+  {
+    "name": "features.4.conv.1.1.bias",
+    "shape": [
+      144
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_4_conv_1_1_bias_int8.npy",
+    "quant_scale": 0.006192034110426903
+  },
+  {
+    "name": "features.4.conv.1.1.running_mean",
+    "shape": [
+      144
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_4_conv_1_1_running_mean_int8.npy",
+    "quant_scale": 0.002914233598858118
+  },
+  {
+    "name": "features.4.conv.1.1.running_var",
+    "shape": [
+      144
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_4_conv_1_1_running_var_int8.npy",
+    "quant_scale": 0.00034804234746843576
+  },
+  {
+    "name": "features.4.conv.1.1.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_4_conv_1_1_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.4.conv.2.weight",
+    "shape": [
+      32,
+      144,
+      1,
+      1
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_4_conv_2_weight_int8.npy",
+    "quant_scale": 0.005634986329823732
+  },
+  {
+    "name": "features.4.conv.3.weight",
+    "shape": [
+      32
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_4_conv_3_weight_int8.npy",
+    "quant_scale": 0.00605423841625452
+  },
+  {
+    "name": "features.4.conv.3.bias",
+    "shape": [
+      32
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_4_conv_3_bias_int8.npy",
+    "quant_scale": 3.068409748507861e-09
+  },
+  {
+    "name": "features.4.conv.3.running_mean",
+    "shape": [
+      32
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_4_conv_3_running_mean_int8.npy",
+    "quant_scale": 0.009897510521113873
+  },
+  {
+    "name": "features.4.conv.3.running_var",
+    "shape": [
+      32
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_4_conv_3_running_var_int8.npy",
+    "quant_scale": 0.0039712004363536835
+  },
+  {
+    "name": "features.4.conv.3.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_4_conv_3_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.5.conv.0.0.weight",
+    "shape": [
+      192,
+      32,
+      1,
+      1
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_5_conv_0_0_weight_int8.npy",
+    "quant_scale": 0.0044508627615869045
+  },
+  {
+    "name": "features.5.conv.0.1.weight",
+    "shape": [
+      192
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_5_conv_0_1_weight_int8.npy",
+    "quant_scale": 0.0024836512748152018
+  },
+  {
+    "name": "features.5.conv.0.1.bias",
+    "shape": [
+      192
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_5_conv_0_1_bias_int8.npy",
+    "quant_scale": 0.003188302041962743
+  },
+  {
+    "name": "features.5.conv.0.1.running_mean",
+    "shape": [
+      192
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_5_conv_0_1_running_mean_int8.npy",
+    "quant_scale": 3.0256668281936072e-09
+  },
+  {
+    "name": "features.5.conv.0.1.running_var",
+    "shape": [
+      192
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_5_conv_0_1_running_var_int8.npy",
+    "quant_scale": 0.0024363966658711433
+  },
+  {
+    "name": "features.5.conv.0.1.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_5_conv_0_1_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.5.conv.1.0.weight",
+    "shape": [
+      192,
+      1,
+      3,
+      3
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_5_conv_1_0_weight_int8.npy",
+    "quant_scale": 0.005811180453747511
+  },
+  {
+    "name": "features.5.conv.1.1.weight",
+    "shape": [
+      192
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_5_conv_1_1_weight_int8.npy",
+    "quant_scale": 0.0045195347629487514
+  },
+  {
+    "name": "features.5.conv.1.1.bias",
+    "shape": [
+      192
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_5_conv_1_1_bias_int8.npy",
+    "quant_scale": 0.003985283430665731
+  },
+  {
+    "name": "features.5.conv.1.1.running_mean",
+    "shape": [
+      192
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_5_conv_1_1_running_mean_int8.npy",
+    "quant_scale": 0.0012726581189781427
+  },
+  {
+    "name": "features.5.conv.1.1.running_var",
+    "shape": [
+      192
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_5_conv_1_1_running_var_int8.npy",
+    "quant_scale": 5.5469503422500566e-05
+  },
+  {
+    "name": "features.5.conv.1.1.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_5_conv_1_1_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.5.conv.2.weight",
+    "shape": [
+      32,
+      192,
+      1,
+      1
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_5_conv_2_weight_int8.npy",
+    "quant_scale": 0.003032759064808488
+  },
+  {
+    "name": "features.5.conv.3.weight",
+    "shape": [
+      32
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_5_conv_3_weight_int8.npy",
+    "quant_scale": 0.004515374545007944
+  },
+  {
+    "name": "features.5.conv.3.bias",
+    "shape": [
+      32
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_5_conv_3_bias_int8.npy",
+    "quant_scale": 2.241881347231356e-09
+  },
+  {
+    "name": "features.5.conv.3.running_mean",
+    "shape": [
+      32
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_5_conv_3_running_mean_int8.npy",
+    "quant_scale": 0.003064477350562811
+  },
+  {
+    "name": "features.5.conv.3.running_var",
+    "shape": [
+      32
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_5_conv_3_running_var_int8.npy",
+    "quant_scale": 0.00044259519199840724
+  },
+  {
+    "name": "features.5.conv.3.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_5_conv_3_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.6.conv.0.0.weight",
+    "shape": [
+      192,
+      32,
+      1,
+      1
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_6_conv_0_0_weight_int8.npy",
+    "quant_scale": 0.0030289851129055023
+  },
+  {
+    "name": "features.6.conv.0.1.weight",
+    "shape": [
+      192
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_6_conv_0_1_weight_int8.npy",
+    "quant_scale": 0.001682091737166047
+  },
+  {
+    "name": "features.6.conv.0.1.bias",
+    "shape": [
+      192
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_6_conv_0_1_bias_int8.npy",
+    "quant_scale": 0.002657665405422449
+  },
+  {
+    "name": "features.6.conv.0.1.running_mean",
+    "shape": [
+      192
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_6_conv_0_1_running_mean_int8.npy",
+    "quant_scale": 2.947256216856431e-09
+  },
+  {
+    "name": "features.6.conv.0.1.running_var",
+    "shape": [
+      192
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_6_conv_0_1_running_var_int8.npy",
+    "quant_scale": 0.003398128319531679
+  },
+  {
+    "name": "features.6.conv.0.1.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_6_conv_0_1_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.6.conv.1.0.weight",
+    "shape": [
+      192,
+      1,
+      3,
+      3
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_6_conv_1_0_weight_int8.npy",
+    "quant_scale": 0.004583384841680527
+  },
+  {
+    "name": "features.6.conv.1.1.weight",
+    "shape": [
+      192
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_6_conv_1_1_weight_int8.npy",
+    "quant_scale": 0.0031147063709795475
+  },
+  {
+    "name": "features.6.conv.1.1.bias",
+    "shape": [
+      192
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_6_conv_1_1_bias_int8.npy",
+    "quant_scale": 0.005392172839492559
+  },
+  {
+    "name": "features.6.conv.1.1.running_mean",
+    "shape": [
+      192
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_6_conv_1_1_running_mean_int8.npy",
+    "quant_scale": 0.0013775302795693278
+  },
+  {
+    "name": "features.6.conv.1.1.running_var",
+    "shape": [
+      192
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_6_conv_1_1_running_var_int8.npy",
+    "quant_scale": 2.8422196919564158e-05
+  },
+  {
+    "name": "features.6.conv.1.1.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_6_conv_1_1_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.6.conv.2.weight",
+    "shape": [
+      32,
+      192,
+      1,
+      1
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_6_conv_2_weight_int8.npy",
+    "quant_scale": 0.0027847106102854013
+  },
+  {
+    "name": "features.6.conv.3.weight",
+    "shape": [
+      32
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_6_conv_3_weight_int8.npy",
+    "quant_scale": 0.0038016545586287975
+  },
+  {
+    "name": "features.6.conv.3.bias",
+    "shape": [
+      32
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_6_conv_3_bias_int8.npy",
+    "quant_scale": 1.925152259829588e-09
+  },
+  {
+    "name": "features.6.conv.3.running_mean",
+    "shape": [
+      32
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_6_conv_3_running_mean_int8.npy",
+    "quant_scale": 0.0020598513074219227
+  },
+  {
+    "name": "features.6.conv.3.running_var",
+    "shape": [
+      32
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_6_conv_3_running_var_int8.npy",
+    "quant_scale": 0.00020062283147126436
+  },
+  {
+    "name": "features.6.conv.3.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_6_conv_3_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.7.conv.0.0.weight",
+    "shape": [
+      192,
+      32,
+      1,
+      1
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_7_conv_0_0_weight_int8.npy",
+    "quant_scale": 0.004336179234087467
+  },
+  {
+    "name": "features.7.conv.0.1.weight",
+    "shape": [
+      192
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_7_conv_0_1_weight_int8.npy",
+    "quant_scale": 0.002356274053454399
+  },
+  {
+    "name": "features.7.conv.0.1.bias",
+    "shape": [
+      192
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_7_conv_0_1_bias_int8.npy",
+    "quant_scale": 0.002452604938298464
+  },
+  {
+    "name": "features.7.conv.0.1.running_mean",
+    "shape": [
+      192
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_7_conv_0_1_running_mean_int8.npy",
+    "quant_scale": 6.387057549517294e-09
+  },
+  {
+    "name": "features.7.conv.0.1.running_var",
+    "shape": [
+      192
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_7_conv_0_1_running_var_int8.npy",
+    "quant_scale": 0.007609711494296789
+  },
+  {
+    "name": "features.7.conv.0.1.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_7_conv_0_1_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.7.conv.1.0.weight",
+    "shape": [
+      192,
+      1,
+      3,
+      3
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_7_conv_1_0_weight_int8.npy",
+    "quant_scale": 0.0022023252677172422
+  },
+  {
+    "name": "features.7.conv.1.1.weight",
+    "shape": [
+      192
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_7_conv_1_1_weight_int8.npy",
+    "quant_scale": 0.003267782274633646
+  },
+  {
+    "name": "features.7.conv.1.1.bias",
+    "shape": [
+      192
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_7_conv_1_1_bias_int8.npy",
+    "quant_scale": 0.005549426190555096
+  },
+  {
+    "name": "features.7.conv.1.1.running_mean",
+    "shape": [
+      192
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_7_conv_1_1_running_mean_int8.npy",
+    "quant_scale": 0.0026422282680869102
+  },
+  {
+    "name": "features.7.conv.1.1.running_var",
+    "shape": [
+      192
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_7_conv_1_1_running_var_int8.npy",
+    "quant_scale": 0.00020773921278305352
+  },
+  {
+    "name": "features.7.conv.1.1.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_7_conv_1_1_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.7.conv.2.weight",
+    "shape": [
+      64,
+      192,
+      1,
+      1
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_7_conv_2_weight_int8.npy",
+    "quant_scale": 0.003663888666778803
+  },
+  {
+    "name": "features.7.conv.3.weight",
+    "shape": [
+      64
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_7_conv_3_weight_int8.npy",
+    "quant_scale": 0.005617177579551935
+  },
+  {
+    "name": "features.7.conv.3.bias",
+    "shape": [
+      64
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_7_conv_3_bias_int8.npy",
+    "quant_scale": 2.1047261711260035e-09
+  },
+  {
+    "name": "features.7.conv.3.running_mean",
+    "shape": [
+      64
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_7_conv_3_running_mean_int8.npy",
+    "quant_scale": 0.00981841329485178
+  },
+  {
+    "name": "features.7.conv.3.running_var",
+    "shape": [
+      64
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_7_conv_3_running_var_int8.npy",
+    "quant_scale": 0.003228476271033287
+  },
+  {
+    "name": "features.7.conv.3.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_7_conv_3_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.8.conv.0.0.weight",
+    "shape": [
+      384,
+      64,
+      1,
+      1
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_8_conv_0_0_weight_int8.npy",
+    "quant_scale": 0.002508196048438549
+  },
+  {
+    "name": "features.8.conv.0.1.weight",
+    "shape": [
+      384
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_8_conv_0_1_weight_int8.npy",
+    "quant_scale": 0.0014591702492907643
+  },
+  {
+    "name": "features.8.conv.0.1.bias",
+    "shape": [
+      384
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_8_conv_0_1_bias_int8.npy",
+    "quant_scale": 0.003540590638294816
+  },
+  {
+    "name": "features.8.conv.0.1.running_mean",
+    "shape": [
+      384
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_8_conv_0_1_running_mean_int8.npy",
+    "quant_scale": 1.0836076480558177e-09
+  },
+  {
+    "name": "features.8.conv.0.1.running_var",
+    "shape": [
+      384
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_8_conv_0_1_running_var_int8.npy",
+    "quant_scale": 0.0017162973526865244
+  },
+  {
+    "name": "features.8.conv.0.1.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_8_conv_0_1_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.8.conv.1.0.weight",
+    "shape": [
+      384,
+      1,
+      3,
+      3
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_8_conv_1_0_weight_int8.npy",
+    "quant_scale": 0.004005377646535635
+  },
+  {
+    "name": "features.8.conv.1.1.weight",
+    "shape": [
+      384
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_8_conv_1_1_weight_int8.npy",
+    "quant_scale": 0.0035447406116873026
+  },
+  {
+    "name": "features.8.conv.1.1.bias",
+    "shape": [
+      384
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_8_conv_1_1_bias_int8.npy",
+    "quant_scale": 0.004072671756148338
+  },
+  {
+    "name": "features.8.conv.1.1.running_mean",
+    "shape": [
+      384
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_8_conv_1_1_running_mean_int8.npy",
+    "quant_scale": 0.0013017886085435748
+  },
+  {
+    "name": "features.8.conv.1.1.running_var",
+    "shape": [
+      384
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_8_conv_1_1_running_var_int8.npy",
+    "quant_scale": 4.42242635472212e-05
+  },
+  {
+    "name": "features.8.conv.1.1.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_8_conv_1_1_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.8.conv.2.weight",
+    "shape": [
+      64,
+      384,
+      1,
+      1
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_8_conv_2_weight_int8.npy",
+    "quant_scale": 0.002100945683196187
+  },
+  {
+    "name": "features.8.conv.3.weight",
+    "shape": [
+      64
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_8_conv_3_weight_int8.npy",
+    "quant_scale": 0.005134574603289366
+  },
+  {
+    "name": "features.8.conv.3.bias",
+    "shape": [
+      64
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_8_conv_3_bias_int8.npy",
+    "quant_scale": 1.6938973557145687e-09
+  },
+  {
+    "name": "features.8.conv.3.running_mean",
+    "shape": [
+      64
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_8_conv_3_running_mean_int8.npy",
+    "quant_scale": 0.0036633736453950405
+  },
+  {
+    "name": "features.8.conv.3.running_var",
+    "shape": [
+      64
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_8_conv_3_running_var_int8.npy",
+    "quant_scale": 0.00038470065919682384
+  },
+  {
+    "name": "features.8.conv.3.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_8_conv_3_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.9.conv.0.0.weight",
+    "shape": [
+      384,
+      64,
+      1,
+      1
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_9_conv_0_0_weight_int8.npy",
+    "quant_scale": 0.002578077604994178
+  },
+  {
+    "name": "features.9.conv.0.1.weight",
+    "shape": [
+      384
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_9_conv_0_1_weight_int8.npy",
+    "quant_scale": 0.0016987442504614592
+  },
+  {
+    "name": "features.9.conv.0.1.bias",
+    "shape": [
+      384
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_9_conv_0_1_bias_int8.npy",
+    "quant_scale": 0.0019485836382955313
+  },
+  {
+    "name": "features.9.conv.0.1.running_mean",
+    "shape": [
+      384
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_9_conv_0_1_running_mean_int8.npy",
+    "quant_scale": 2.619814143400845e-09
+  },
+  {
+    "name": "features.9.conv.0.1.running_var",
+    "shape": [
+      384
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_9_conv_0_1_running_var_int8.npy",
+    "quant_scale": 0.0032138086389750242
+  },
+  {
+    "name": "features.9.conv.0.1.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_9_conv_0_1_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.9.conv.1.0.weight",
+    "shape": [
+      384,
+      1,
+      3,
+      3
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_9_conv_1_0_weight_int8.npy",
+    "quant_scale": 0.004837122280150652
+  },
+  {
+    "name": "features.9.conv.1.1.weight",
+    "shape": [
+      384
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_9_conv_1_1_weight_int8.npy",
+    "quant_scale": 0.0027780896052718163
+  },
+  {
+    "name": "features.9.conv.1.1.bias",
+    "shape": [
+      384
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_9_conv_1_1_bias_int8.npy",
+    "quant_scale": 0.003235381795093417
+  },
+  {
+    "name": "features.9.conv.1.1.running_mean",
+    "shape": [
+      384
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_9_conv_1_1_running_mean_int8.npy",
+    "quant_scale": 0.0007652461063116789
+  },
+  {
+    "name": "features.9.conv.1.1.running_var",
+    "shape": [
+      384
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_9_conv_1_1_running_var_int8.npy",
+    "quant_scale": 4.3680774979293346e-05
+  },
+  {
+    "name": "features.9.conv.1.1.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_9_conv_1_1_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.9.conv.2.weight",
+    "shape": [
+      64,
+      384,
+      1,
+      1
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_9_conv_2_weight_int8.npy",
+    "quant_scale": 0.0022696498781442642
+  },
+  {
+    "name": "features.9.conv.3.weight",
+    "shape": [
+      64
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_9_conv_3_weight_int8.npy",
+    "quant_scale": 0.002899719402194023
+  },
+  {
+    "name": "features.9.conv.3.bias",
+    "shape": [
+      64
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_9_conv_3_bias_int8.npy",
+    "quant_scale": 1.5574248557470582e-09
+  },
+  {
+    "name": "features.9.conv.3.running_mean",
+    "shape": [
+      64
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_9_conv_3_running_mean_int8.npy",
+    "quant_scale": 0.0027495073154568672
+  },
+  {
+    "name": "features.9.conv.3.running_var",
+    "shape": [
+      64
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_9_conv_3_running_var_int8.npy",
+    "quant_scale": 0.00018829424516297877
+  },
+  {
+    "name": "features.9.conv.3.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_9_conv_3_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.10.conv.0.0.weight",
+    "shape": [
+      384,
+      64,
+      1,
+      1
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_10_conv_0_0_weight_int8.npy",
+    "quant_scale": 0.002156147500500083
+  },
+  {
+    "name": "features.10.conv.0.1.weight",
+    "shape": [
+      384
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_10_conv_0_1_weight_int8.npy",
+    "quant_scale": 0.0017730164108797908
+  },
+  {
+    "name": "features.10.conv.0.1.bias",
+    "shape": [
+      384
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_10_conv_0_1_bias_int8.npy",
+    "quant_scale": 0.0029917540960013866
+  },
+  {
+    "name": "features.10.conv.0.1.running_mean",
+    "shape": [
+      384
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_10_conv_0_1_running_mean_int8.npy",
+    "quant_scale": 3.3071998473133135e-09
+  },
+  {
+    "name": "features.10.conv.0.1.running_var",
+    "shape": [
+      384
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_10_conv_0_1_running_var_int8.npy",
+    "quant_scale": 0.002258947351947427
+  },
+  {
+    "name": "features.10.conv.0.1.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_10_conv_0_1_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.10.conv.1.0.weight",
+    "shape": [
+      384,
+      1,
+      3,
+      3
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_10_conv_1_0_weight_int8.npy",
+    "quant_scale": 0.004796223249286413
+  },
+  {
+    "name": "features.10.conv.1.1.weight",
+    "shape": [
+      384
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_10_conv_1_1_weight_int8.npy",
+    "quant_scale": 0.003491876646876335
+  },
+  {
+    "name": "features.10.conv.1.1.bias",
+    "shape": [
+      384
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_10_conv_1_1_bias_int8.npy",
+    "quant_scale": 0.0034120269119739532
+  },
+  {
+    "name": "features.10.conv.1.1.running_mean",
+    "shape": [
+      384
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_10_conv_1_1_running_mean_int8.npy",
+    "quant_scale": 0.0009481803281232715
+  },
+  {
+    "name": "features.10.conv.1.1.running_var",
+    "shape": [
+      384
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_10_conv_1_1_running_var_int8.npy",
+    "quant_scale": 1.9154644178343005e-05
+  },
+  {
+    "name": "features.10.conv.1.1.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_10_conv_1_1_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.10.conv.2.weight",
+    "shape": [
+      64,
+      384,
+      1,
+      1
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_10_conv_2_weight_int8.npy",
+    "quant_scale": 0.0029418454505503178
+  },
+  {
+    "name": "features.10.conv.3.weight",
+    "shape": [
+      64
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_10_conv_3_weight_int8.npy",
+    "quant_scale": 0.003289206651970744
+  },
+  {
+    "name": "features.10.conv.3.bias",
+    "shape": [
+      64
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_10_conv_3_bias_int8.npy",
+    "quant_scale": 1.8937778012428907e-09
+  },
+  {
+    "name": "features.10.conv.3.running_mean",
+    "shape": [
+      64
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_10_conv_3_running_mean_int8.npy",
+    "quant_scale": 0.0030488730408251286
+  },
+  {
+    "name": "features.10.conv.3.running_var",
+    "shape": [
+      64
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_10_conv_3_running_var_int8.npy",
+    "quant_scale": 0.00041475234320387244
+  },
+  {
+    "name": "features.10.conv.3.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_10_conv_3_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.11.conv.0.0.weight",
+    "shape": [
+      384,
+      64,
+      1,
+      1
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_11_conv_0_0_weight_int8.npy",
+    "quant_scale": 0.003442833200097084
+  },
+  {
+    "name": "features.11.conv.0.1.weight",
+    "shape": [
+      384
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_11_conv_0_1_weight_int8.npy",
+    "quant_scale": 0.0016802198952063918
+  },
+  {
+    "name": "features.11.conv.0.1.bias",
+    "shape": [
+      384
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_11_conv_0_1_bias_int8.npy",
+    "quant_scale": 0.0024235497694462538
+  },
+  {
+    "name": "features.11.conv.0.1.running_mean",
+    "shape": [
+      384
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_11_conv_0_1_running_mean_int8.npy",
+    "quant_scale": 5.034629602107543e-09
+  },
+  {
+    "name": "features.11.conv.0.1.running_var",
+    "shape": [
+      384
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_11_conv_0_1_running_var_int8.npy",
+    "quant_scale": 0.005859240889549255
+  },
+  {
+    "name": "features.11.conv.0.1.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_11_conv_0_1_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.11.conv.1.0.weight",
+    "shape": [
+      384,
+      1,
+      3,
+      3
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_11_conv_1_0_weight_int8.npy",
+    "quant_scale": 0.0044365739449858665
+  },
+  {
+    "name": "features.11.conv.1.1.weight",
+    "shape": [
+      384
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_11_conv_1_1_weight_int8.npy",
+    "quant_scale": 0.0036116382107138634
+  },
+  {
+    "name": "features.11.conv.1.1.bias",
+    "shape": [
+      384
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_11_conv_1_1_bias_int8.npy",
+    "quant_scale": 0.003933468833565712
+  },
+  {
+    "name": "features.11.conv.1.1.running_mean",
+    "shape": [
+      384
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_11_conv_1_1_running_mean_int8.npy",
+    "quant_scale": 0.0014829763676971197
+  },
+  {
+    "name": "features.11.conv.1.1.running_var",
+    "shape": [
+      384
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_11_conv_1_1_running_var_int8.npy",
+    "quant_scale": 4.991067180526443e-05
+  },
+  {
+    "name": "features.11.conv.1.1.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_11_conv_1_1_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.11.conv.2.weight",
+    "shape": [
+      96,
+      384,
+      1,
+      1
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_11_conv_2_weight_int8.npy",
+    "quant_scale": 0.0036046619061380625
+  },
+  {
+    "name": "features.11.conv.3.weight",
+    "shape": [
+      96
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_11_conv_3_weight_int8.npy",
+    "quant_scale": 0.004296445287764072
+  },
+  {
+    "name": "features.11.conv.3.bias",
+    "shape": [
+      96
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_11_conv_3_bias_int8.npy",
+    "quant_scale": 3.1567679581456787e-09
+  },
+  {
+    "name": "features.11.conv.3.running_mean",
+    "shape": [
+      96
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_11_conv_3_running_mean_int8.npy",
+    "quant_scale": 0.005073705222457647
+  },
+  {
+    "name": "features.11.conv.3.running_var",
+    "shape": [
+      96
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_11_conv_3_running_var_int8.npy",
+    "quant_scale": 0.0032759264577180147
+  },
+  {
+    "name": "features.11.conv.3.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_11_conv_3_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.12.conv.0.0.weight",
+    "shape": [
+      576,
+      96,
+      1,
+      1
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_12_conv_0_0_weight_int8.npy",
+    "quant_scale": 0.00304509443230927
+  },
+  {
+    "name": "features.12.conv.0.1.weight",
+    "shape": [
+      576
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_12_conv_0_1_weight_int8.npy",
+    "quant_scale": 0.0019432043191045523
+  },
+  {
+    "name": "features.12.conv.0.1.bias",
+    "shape": [
+      576
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_12_conv_0_1_bias_int8.npy",
+    "quant_scale": 0.00535021536052227
+  },
+  {
+    "name": "features.12.conv.0.1.running_mean",
+    "shape": [
+      576
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_12_conv_0_1_running_mean_int8.npy",
+    "quant_scale": 1.6497392341108252e-09
+  },
+  {
+    "name": "features.12.conv.0.1.running_var",
+    "shape": [
+      576
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_12_conv_0_1_running_var_int8.npy",
+    "quant_scale": 0.0015165352961048484
+  },
+  {
+    "name": "features.12.conv.0.1.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_12_conv_0_1_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.12.conv.1.0.weight",
+    "shape": [
+      576,
+      1,
+      3,
+      3
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_12_conv_1_0_weight_int8.npy",
+    "quant_scale": 0.004147644620388746
+  },
+  {
+    "name": "features.12.conv.1.1.weight",
+    "shape": [
+      576
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_12_conv_1_1_weight_int8.npy",
+    "quant_scale": 0.0027839483227580786
+  },
+  {
+    "name": "features.12.conv.1.1.bias",
+    "shape": [
+      576
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_12_conv_1_1_bias_int8.npy",
+    "quant_scale": 0.00395057862624526
+  },
+  {
+    "name": "features.12.conv.1.1.running_mean",
+    "shape": [
+      576
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_12_conv_1_1_running_mean_int8.npy",
+    "quant_scale": 0.0012394149089232087
+  },
+  {
+    "name": "features.12.conv.1.1.running_var",
+    "shape": [
+      576
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_12_conv_1_1_running_var_int8.npy",
+    "quant_scale": 7.550698501290753e-05
+  },
+  {
+    "name": "features.12.conv.1.1.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_12_conv_1_1_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.12.conv.2.weight",
+    "shape": [
+      96,
+      576,
+      1,
+      1
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_12_conv_2_weight_int8.npy",
+    "quant_scale": 0.002054664772003889
+  },
+  {
+    "name": "features.12.conv.3.weight",
+    "shape": [
+      96
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_12_conv_3_weight_int8.npy",
+    "quant_scale": 0.0026657353155314922
+  },
+  {
+    "name": "features.12.conv.3.bias",
+    "shape": [
+      96
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_12_conv_3_bias_int8.npy",
+    "quant_scale": 2.372136043149453e-09
+  },
+  {
+    "name": "features.12.conv.3.running_mean",
+    "shape": [
+      96
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_12_conv_3_running_mean_int8.npy",
+    "quant_scale": 0.003727811388671398
+  },
+  {
+    "name": "features.12.conv.3.running_var",
+    "shape": [
+      96
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_12_conv_3_running_var_int8.npy",
+    "quant_scale": 0.0002198899892391637
+  },
+  {
+    "name": "features.12.conv.3.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_12_conv_3_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.13.conv.0.0.weight",
+    "shape": [
+      576,
+      96,
+      1,
+      1
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_13_conv_0_0_weight_int8.npy",
+    "quant_scale": 0.002247447380796075
+  },
+  {
+    "name": "features.13.conv.0.1.weight",
+    "shape": [
+      576
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_13_conv_0_1_weight_int8.npy",
+    "quant_scale": 0.0029980612453073263
+  },
+  {
+    "name": "features.13.conv.0.1.bias",
+    "shape": [
+      576
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_13_conv_0_1_bias_int8.npy",
+    "quant_scale": 0.0031407743226736784
+  },
+  {
+    "name": "features.13.conv.0.1.running_mean",
+    "shape": [
+      576
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_13_conv_0_1_running_mean_int8.npy",
+    "quant_scale": 4.721699031762228e-09
+  },
+  {
+    "name": "features.13.conv.0.1.running_var",
+    "shape": [
+      576
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_13_conv_0_1_running_var_int8.npy",
+    "quant_scale": 0.003063277341425419
+  },
+  {
+    "name": "features.13.conv.0.1.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_13_conv_0_1_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.13.conv.1.0.weight",
+    "shape": [
+      576,
+      1,
+      3,
+      3
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_13_conv_1_0_weight_int8.npy",
+    "quant_scale": 0.004491133149713278
+  },
+  {
+    "name": "features.13.conv.1.1.weight",
+    "shape": [
+      576
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_13_conv_1_1_weight_int8.npy",
+    "quant_scale": 0.005171800032258034
+  },
+  {
+    "name": "features.13.conv.1.1.bias",
+    "shape": [
+      576
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_13_conv_1_1_bias_int8.npy",
+    "quant_scale": 0.004668732173740864
+  },
+  {
+    "name": "features.13.conv.1.1.running_mean",
+    "shape": [
+      576
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_13_conv_1_1_running_mean_int8.npy",
+    "quant_scale": 0.0008803404052741826
+  },
+  {
+    "name": "features.13.conv.1.1.running_var",
+    "shape": [
+      576
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_13_conv_1_1_running_var_int8.npy",
+    "quant_scale": 7.126457785489038e-05
+  },
+  {
+    "name": "features.13.conv.1.1.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_13_conv_1_1_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.13.conv.2.weight",
+    "shape": [
+      96,
+      576,
+      1,
+      1
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_13_conv_2_weight_int8.npy",
+    "quant_scale": 0.0044232867658138275
+  },
+  {
+    "name": "features.13.conv.3.weight",
+    "shape": [
+      96
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_13_conv_3_weight_int8.npy",
+    "quant_scale": 0.00400343956425786
+  },
+  {
+    "name": "features.13.conv.3.bias",
+    "shape": [
+      96
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_13_conv_3_bias_int8.npy",
+    "quant_scale": 2.1330566202237833e-09
+  },
+  {
+    "name": "features.13.conv.3.running_mean",
+    "shape": [
+      96
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_13_conv_3_running_mean_int8.npy",
+    "quant_scale": 0.003543268656358123
+  },
+  {
+    "name": "features.13.conv.3.running_var",
+    "shape": [
+      96
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_13_conv_3_running_var_int8.npy",
+    "quant_scale": 0.0002532124926801771
+  },
+  {
+    "name": "features.13.conv.3.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_13_conv_3_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.14.conv.0.0.weight",
+    "shape": [
+      576,
+      96,
+      1,
+      1
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_14_conv_0_0_weight_int8.npy",
+    "quant_scale": 0.0030797480139881372
+  },
+  {
+    "name": "features.14.conv.0.1.weight",
+    "shape": [
+      576
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_14_conv_0_1_weight_int8.npy",
+    "quant_scale": 0.0024779685772955418
+  },
+  {
+    "name": "features.14.conv.0.1.bias",
+    "shape": [
+      576
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_14_conv_0_1_bias_int8.npy",
+    "quant_scale": 0.0029231731314212084
+  },
+  {
+    "name": "features.14.conv.0.1.running_mean",
+    "shape": [
+      576
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_14_conv_0_1_running_mean_int8.npy",
+    "quant_scale": 6.211825720470188e-09
+  },
+  {
+    "name": "features.14.conv.0.1.running_var",
+    "shape": [
+      576
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_14_conv_0_1_running_var_int8.npy",
+    "quant_scale": 0.0038818332832306623
+  },
+  {
+    "name": "features.14.conv.0.1.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_14_conv_0_1_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.14.conv.1.0.weight",
+    "shape": [
+      576,
+      1,
+      3,
+      3
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_14_conv_1_0_weight_int8.npy",
+    "quant_scale": 0.0019751947838813066
+  },
+  {
+    "name": "features.14.conv.1.1.weight",
+    "shape": [
+      576
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_14_conv_1_1_weight_int8.npy",
+    "quant_scale": 0.004616131074726582
+  },
+  {
+    "name": "features.14.conv.1.1.bias",
+    "shape": [
+      576
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_14_conv_1_1_bias_int8.npy",
+    "quant_scale": 0.004518800415098667
+  },
+  {
+    "name": "features.14.conv.1.1.running_mean",
+    "shape": [
+      576
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_14_conv_1_1_running_mean_int8.npy",
+    "quant_scale": 0.0008045742870308459
+  },
+  {
+    "name": "features.14.conv.1.1.running_var",
+    "shape": [
+      576
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_14_conv_1_1_running_var_int8.npy",
+    "quant_scale": 7.596305658807978e-05
+  },
+  {
+    "name": "features.14.conv.1.1.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_14_conv_1_1_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.14.conv.2.weight",
+    "shape": [
+      160,
+      576,
+      1,
+      1
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_14_conv_2_weight_int8.npy",
+    "quant_scale": 0.0027469340711832047
+  },
+  {
+    "name": "features.14.conv.3.weight",
+    "shape": [
+      160
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_14_conv_3_weight_int8.npy",
+    "quant_scale": 0.004307077266275883
+  },
+  {
+    "name": "features.14.conv.3.bias",
+    "shape": [
+      160
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_14_conv_3_bias_int8.npy",
+    "quant_scale": 2.243770722998306e-05
+  },
+  {
+    "name": "features.14.conv.3.running_mean",
+    "shape": [
+      160
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_14_conv_3_running_mean_int8.npy",
+    "quant_scale": 0.01057508122175932
+  },
+  {
+    "name": "features.14.conv.3.running_var",
+    "shape": [
+      160
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_14_conv_3_running_var_int8.npy",
+    "quant_scale": 0.0029802192002534866
+  },
+  {
+    "name": "features.14.conv.3.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_14_conv_3_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.15.conv.0.0.weight",
+    "shape": [
+      960,
+      160,
+      1,
+      1
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_15_conv_0_0_weight_int8.npy",
+    "quant_scale": 0.00209023873321712
+  },
+  {
+    "name": "features.15.conv.0.1.weight",
+    "shape": [
+      960
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_15_conv_0_1_weight_int8.npy",
+    "quant_scale": 0.0030698380433022976
+  },
+  {
+    "name": "features.15.conv.0.1.bias",
+    "shape": [
+      960
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_15_conv_0_1_bias_int8.npy",
+    "quant_scale": 0.0027307376731187105
+  },
+  {
+    "name": "features.15.conv.0.1.running_mean",
+    "shape": [
+      960
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_15_conv_0_1_running_mean_int8.npy",
+    "quant_scale": 1.3299048077897169e-05
+  },
+  {
+    "name": "features.15.conv.0.1.running_var",
+    "shape": [
+      960
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_15_conv_0_1_running_var_int8.npy",
+    "quant_scale": 0.0013311492512002587
+  },
+  {
+    "name": "features.15.conv.0.1.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_15_conv_0_1_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.15.conv.1.0.weight",
+    "shape": [
+      960,
+      1,
+      3,
+      3
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_15_conv_1_0_weight_int8.npy",
+    "quant_scale": 0.004839558154344559
+  },
+  {
+    "name": "features.15.conv.1.1.weight",
+    "shape": [
+      960
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_15_conv_1_1_weight_int8.npy",
+    "quant_scale": 0.007234884891659021
+  },
+  {
+    "name": "features.15.conv.1.1.bias",
+    "shape": [
+      960
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_15_conv_1_1_bias_int8.npy",
+    "quant_scale": 0.005398670211434364
+  },
+  {
+    "name": "features.15.conv.1.1.running_mean",
+    "shape": [
+      960
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_15_conv_1_1_running_mean_int8.npy",
+    "quant_scale": 0.0008477189112454653
+  },
+  {
+    "name": "features.15.conv.1.1.running_var",
+    "shape": [
+      960
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_15_conv_1_1_running_var_int8.npy",
+    "quant_scale": 4.617182639776729e-05
+  },
+  {
+    "name": "features.15.conv.1.1.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_15_conv_1_1_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.15.conv.2.weight",
+    "shape": [
+      160,
+      960,
+      1,
+      1
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_15_conv_2_weight_int8.npy",
+    "quant_scale": 0.0019638834055513144
+  },
+  {
+    "name": "features.15.conv.3.weight",
+    "shape": [
+      160
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_15_conv_3_weight_int8.npy",
+    "quant_scale": 0.003925187513232231
+  },
+  {
+    "name": "features.15.conv.3.bias",
+    "shape": [
+      160
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_15_conv_3_bias_int8.npy",
+    "quant_scale": 1.9093560695182532e-05
+  },
+  {
+    "name": "features.15.conv.3.running_mean",
+    "shape": [
+      160
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_15_conv_3_running_mean_int8.npy",
+    "quant_scale": 0.0032867114059627056
+  },
+  {
+    "name": "features.15.conv.3.running_var",
+    "shape": [
+      160
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_15_conv_3_running_var_int8.npy",
+    "quant_scale": 0.0010651819175109267
+  },
+  {
+    "name": "features.15.conv.3.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_15_conv_3_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.16.conv.0.0.weight",
+    "shape": [
+      960,
+      160,
+      1,
+      1
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_16_conv_0_0_weight_int8.npy",
+    "quant_scale": 0.0019347473280504346
+  },
+  {
+    "name": "features.16.conv.0.1.weight",
+    "shape": [
+      960
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_16_conv_0_1_weight_int8.npy",
+    "quant_scale": 0.002173028886318207
+  },
+  {
+    "name": "features.16.conv.0.1.bias",
+    "shape": [
+      960
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_16_conv_0_1_bias_int8.npy",
+    "quant_scale": 0.001993636367842555
+  },
+  {
+    "name": "features.16.conv.0.1.running_mean",
+    "shape": [
+      960
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_16_conv_0_1_running_mean_int8.npy",
+    "quant_scale": 1.9558254280127585e-05
+  },
+  {
+    "name": "features.16.conv.0.1.running_var",
+    "shape": [
+      960
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_16_conv_0_1_running_var_int8.npy",
+    "quant_scale": 0.004341874737292528
+  },
+  {
+    "name": "features.16.conv.0.1.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_16_conv_0_1_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.16.conv.1.0.weight",
+    "shape": [
+      960,
+      1,
+      3,
+      3
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_16_conv_1_0_weight_int8.npy",
+    "quant_scale": 0.003865577280521393
+  },
+  {
+    "name": "features.16.conv.1.1.weight",
+    "shape": [
+      960
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_16_conv_1_1_weight_int8.npy",
+    "quant_scale": 0.00453979941084981
+  },
+  {
+    "name": "features.16.conv.1.1.bias",
+    "shape": [
+      960
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_16_conv_1_1_bias_int8.npy",
+    "quant_scale": 0.0034749554470181465
+  },
+  {
+    "name": "features.16.conv.1.1.running_mean",
+    "shape": [
+      960
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_16_conv_1_1_running_mean_int8.npy",
+    "quant_scale": 0.000995634007267654
+  },
+  {
+    "name": "features.16.conv.1.1.running_var",
+    "shape": [
+      960
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_16_conv_1_1_running_var_int8.npy",
+    "quant_scale": 4.6770201151957735e-05
+  },
+  {
+    "name": "features.16.conv.1.1.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_16_conv_1_1_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.16.conv.2.weight",
+    "shape": [
+      160,
+      960,
+      1,
+      1
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_16_conv_2_weight_int8.npy",
+    "quant_scale": 0.0024293616879731417
+  },
+  {
+    "name": "features.16.conv.3.weight",
+    "shape": [
+      160
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_16_conv_3_weight_int8.npy",
+    "quant_scale": 0.007903218269348145
+  },
+  {
+    "name": "features.16.conv.3.bias",
+    "shape": [
+      160
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_16_conv_3_bias_int8.npy",
+    "quant_scale": 1.6455822333227843e-05
+  },
+  {
+    "name": "features.16.conv.3.running_mean",
+    "shape": [
+      160
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_16_conv_3_running_mean_int8.npy",
+    "quant_scale": 0.0035250214859843254
+  },
+  {
+    "name": "features.16.conv.3.running_var",
+    "shape": [
+      160
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_16_conv_3_running_var_int8.npy",
+    "quant_scale": 0.0032518880907446146
+  },
+  {
+    "name": "features.16.conv.3.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_16_conv_3_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.17.conv.0.0.weight",
+    "shape": [
+      960,
+      160,
+      1,
+      1
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_17_conv_0_0_weight_int8.npy",
+    "quant_scale": 0.002834189450368285
+  },
+  {
+    "name": "features.17.conv.0.1.weight",
+    "shape": [
+      960
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_17_conv_0_1_weight_int8.npy",
+    "quant_scale": 0.0036713045556098223
+  },
+  {
+    "name": "features.17.conv.0.1.bias",
+    "shape": [
+      960
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_17_conv_0_1_bias_int8.npy",
+    "quant_scale": 0.002179116476327181
+  },
+  {
+    "name": "features.17.conv.0.1.running_mean",
+    "shape": [
+      960
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_17_conv_0_1_running_mean_int8.npy",
+    "quant_scale": 2.93843822873896e-05
+  },
+  {
+    "name": "features.17.conv.0.1.running_var",
+    "shape": [
+      960
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_17_conv_0_1_running_var_int8.npy",
+    "quant_scale": 0.03253970295190811
+  },
+  {
+    "name": "features.17.conv.0.1.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_17_conv_0_1_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.17.conv.1.0.weight",
+    "shape": [
+      960,
+      1,
+      3,
+      3
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_17_conv_1_0_weight_int8.npy",
+    "quant_scale": 0.0017320021288469434
+  },
+  {
+    "name": "features.17.conv.1.1.weight",
+    "shape": [
+      960
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_17_conv_1_1_weight_int8.npy",
+    "quant_scale": 0.004808538127690554
+  },
+  {
+    "name": "features.17.conv.1.1.bias",
+    "shape": [
+      960
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_17_conv_1_1_bias_int8.npy",
+    "quant_scale": 0.00384701625443995
+  },
+  {
+    "name": "features.17.conv.1.1.running_mean",
+    "shape": [
+      960
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_17_conv_1_1_running_mean_int8.npy",
+    "quant_scale": 0.0005000222590751946
+  },
+  {
+    "name": "features.17.conv.1.1.running_var",
+    "shape": [
+      960
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_17_conv_1_1_running_var_int8.npy",
+    "quant_scale": 1.2405370398482773e-05
+  },
+  {
+    "name": "features.17.conv.1.1.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_17_conv_1_1_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.17.conv.2.weight",
+    "shape": [
+      320,
+      960,
+      1,
+      1
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_17_conv_2_weight_int8.npy",
+    "quant_scale": 0.0016713188961148262
+  },
+  {
+    "name": "features.17.conv.3.weight",
+    "shape": [
+      320
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_17_conv_3_weight_int8.npy",
+    "quant_scale": 0.002007030649110675
+  },
+  {
+    "name": "features.17.conv.3.bias",
+    "shape": [
+      320
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_17_conv_3_bias_int8.npy",
+    "quant_scale": 1.046869783749571e-05
+  },
+  {
+    "name": "features.17.conv.3.running_mean",
+    "shape": [
+      320
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_17_conv_3_running_mean_int8.npy",
+    "quant_scale": 0.002782863564789295
+  },
+  {
+    "name": "features.17.conv.3.running_var",
+    "shape": [
+      320
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_17_conv_3_running_var_int8.npy",
+    "quant_scale": 0.0001268198830075562
+  },
+  {
+    "name": "features.17.conv.3.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_17_conv_3_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "features.18.0.weight",
+    "shape": [
+      1280,
+      320,
+      1,
+      1
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_18_0_weight_int8.npy",
+    "quant_scale": 0.0011846993584185839
+  },
+  {
+    "name": "features.18.1.weight",
+    "shape": [
+      1280
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_18_1_weight_int8.npy",
+    "quant_scale": 0.01417332049459219
+  },
+  {
+    "name": "features.18.1.bias",
+    "shape": [
+      1280
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_18_1_bias_int8.npy",
+    "quant_scale": 0.002295049373060465
+  },
+  {
+    "name": "features.18.1.running_mean",
+    "shape": [
+      1280
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_18_1_running_mean_int8.npy",
+    "quant_scale": 6.7771047724818345e-06
+  },
+  {
+    "name": "features.18.1.running_var",
+    "shape": [
+      1280
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/features_18_1_running_var_int8.npy",
+    "quant_scale": 0.00029474025359377265
+  },
+  {
+    "name": "features.18.1.num_batches_tracked",
+    "shape": [],
+    "dtype": "int8",
+    "file": "weights_int8/features_18_1_num_batches_tracked_int8.npy",
+    "quant_scale": 11569.897637795275
+  },
+  {
+    "name": "classifier.1.weight",
+    "shape": [
+      31,
+      1280
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/classifier_1_weight_int8.npy",
+    "quant_scale": 0.005039944779127836
+  },
+  {
+    "name": "classifier.1.bias",
+    "shape": [
+      31
+    ],
+    "dtype": "int8",
+    "file": "weights_int8/classifier_1_bias_int8.npy",
+    "quant_scale": 0.0009250181610696018
+  }
+]
